@@ -21,7 +21,7 @@ public final class Wolfpack {
 	}
 	
 	public static String getVersion() {
-		return "0.1 Beta | 1.7.2";
+		return "0.2 Beta";
 	}
 	
 	public static String getAuthor() {
