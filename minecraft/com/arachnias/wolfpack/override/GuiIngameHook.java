@@ -41,14 +41,16 @@ public class GuiIngameHook extends GuiIngame {
 		int width = sr.getScaledWidth();
 		int height = sr.getScaledHeight();
 		
-		fr.drawString("Arachnias", 2, 2, 0x66FF66);
+		String string = "Arachnias";
+		
+		fr.drawStringWithShadow(string, width - (string.length() * 6), 2, 0x00FF1A);
 		
 		int number = 0;
 		for (Module mod: Wolfpack.getModuleManager().moduleList) {
-			if (mod.getKeybind() > 0) {
+			if (mod.getKeybind() != 0 && mod.isEnabled()) {
 				int x = 2;
 				int y = (10 * number);
-				fr.drawString(mod.getName() + " = " + Keyboard.getKeyName(mod.getKeybind()), x, y + 15, mod.isEnabled() ? 0xFF55FFFF : 0xFFFFFFFF);
+				fr.drawStringWithShadow(mod.getName(), x, y + 2, mod.getModuleColour());
 				number++;
 			}
 		}

@@ -21,6 +21,7 @@ public class ModuleManager {
 			new Step(),
 			
 			// Chat command only modules here
+			new Keybinds(),
 			new Up(),
 	});
 	

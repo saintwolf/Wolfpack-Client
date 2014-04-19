@@ -12,6 +12,7 @@ public class FullBright extends Module {
 	
 	public FullBright() {
 		super("FullBright", Keyboard.KEY_F);
+		this.setModuleColour(0xFFB300);
 	}
 	
 	@Override

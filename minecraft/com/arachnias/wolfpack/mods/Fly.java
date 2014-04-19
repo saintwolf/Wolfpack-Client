@@ -8,6 +8,7 @@ public class Fly extends Module {
 	
 	public Fly() {
 		super("Fly", Keyboard.KEY_R);
+		this.setModuleColour(0x66FF66);
 	}
 	
 	@Override

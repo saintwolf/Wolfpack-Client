@@ -18,6 +18,7 @@ public class Nuker extends Module {
 	
 	public Nuker() {
 		super("Nuker", Keyboard.KEY_N, new String[] {"nuker"});
+		this.setModuleColour(0xF33100);
 		
 		this.nukeSize = 2;
 		

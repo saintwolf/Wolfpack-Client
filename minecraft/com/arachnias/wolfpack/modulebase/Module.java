@@ -15,6 +15,7 @@ public abstract class Module {
 	private int keybind;
 	private boolean enabled;
 	private boolean isChatCommand;
+	private int moduleColour;
 	
 	private String[] chatCommands;
 	
@@ -35,6 +36,8 @@ public abstract class Module {
 		
 		this.isChatCommand = false;
 		
+		this.moduleColour = 0xFFFFFF;
+		
 		this.mc = Wolfpack.getMinecraft();
 	}
 	
@@ -50,6 +53,8 @@ public abstract class Module {
 		this.chatCommands = chatCommands;
 		
 		this.isChatCommand = true;
+		
+		this.moduleColour = 0xFFFFFF;
 		
 		this.mc = Wolfpack.getMinecraft();
 	}
@@ -67,6 +72,8 @@ public abstract class Module {
 		this.chatCommands = chatCommands;
 		
 		this.isChatCommand = true;
+		
+		this.moduleColour = 0xFFFFFF;
 		
 		this.mc = Wolfpack.getMinecraft();
 	}
@@ -109,6 +116,14 @@ public abstract class Module {
 	
 	public String[] getChatCommands() {
 		return this.chatCommands;
+	}
+	
+	public void setModuleColour(int colour) {
+		this.moduleColour = colour;
+	}
+	
+	public int getModuleColour() {
+		return this.moduleColour;
 	}
 	
 	public final void setState(boolean enabled) {
