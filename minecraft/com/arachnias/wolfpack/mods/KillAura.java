@@ -31,25 +31,5 @@ public class KillAura extends Module {
 			}
 		}
 	}
-	/*
-	private boolean isWithinAttackDistance(double playerPos, double entityPos) {
-		if (Math.abs(playerPos - entityPos) <= this.attackDistance) {
-			return true;
-		} else {
-			return false;
-		}
-	}
 	
-	private boolean isXWithinAttackDistance(Entity entity) {
-		return this.isWithinAttackDistance(this.mc.thePlayer.posX, entity.posX);
-	}
-	
-	private boolean isYWithinAttackDistance(Entity entity) {
-		return this.isWithinAttackDistance(this.mc.thePlayer.posY, entity.posY);
-	}
-	
-	private boolean isZWithinAttackDistance(Entity entity) {
-		return this.isWithinAttackDistance(this.mc.thePlayer.posZ, entity.posZ);
-	}
-	*/
 }

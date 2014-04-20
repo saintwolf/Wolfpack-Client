@@ -16,6 +16,7 @@ public final class Wolfpack {
 			
 		}
 	}
+	
 	public static String getName() {
 		return "Wolfpack";
 	}

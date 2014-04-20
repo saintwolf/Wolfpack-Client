@@ -191,6 +191,10 @@ public class PlayerControllerMP
     {
         if (!this.currentGameType.isAdventure() || this.mc.thePlayer.isCurrentToolAdventureModeExempt(par1, par2, par3))
         {
+        	for (Module mod: Wolfpack.getModuleManager().moduleList) {
+        		mod.onClickBlock(par1, par2, par3, par4);
+        	}
+        	
             if (this.currentGameType.isCreative())
             {
                 this.netClientHandler.addToSendQueue(new C07PacketPlayerDigging(0, par1, par2, par3, par4));

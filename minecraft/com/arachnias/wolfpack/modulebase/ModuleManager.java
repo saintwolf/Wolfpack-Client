@@ -19,6 +19,7 @@ public class ModuleManager {
 			new Sneak(),
 			new Sprint(),
 			new Step(),
+			new XRay(),
 			
 			// Chat command only modules here
 			new Keybinds(),
