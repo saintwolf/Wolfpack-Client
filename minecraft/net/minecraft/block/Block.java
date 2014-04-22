@@ -580,8 +580,8 @@ public class Block
     public boolean shouldSideBeRendered(IBlockAccess p_149646_1_, int p_149646_2_, int p_149646_3_, int p_149646_4_, int p_149646_5_)
     {
     	if (Wolfpack.getModuleManager().findMod(XRay.class).isEnabled()) {
-    		for (int blockId: XRay.getXRayList()){
-    			if (Block.getIdFromBlock(p_149646_1_.getBlock(p_149646_2_, p_149646_3_, p_149646_4_)) == blockId) {
+    		for (Block block: XRay.getXRayList()){
+    			if (p_149646_1_.getBlock(p_149646_2_, p_149646_3_, p_149646_4_) == block) {
     				return true;
     			}
     		}
